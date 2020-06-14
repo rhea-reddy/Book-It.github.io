@@ -1,0 +1,147 @@
+body {
+  background-color: #FFF8F3;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #241D15;
+  color: white;
+  font-family: Baskerville;
+}
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+.logo .border {
+  border-style: solid;
+  border-color: white;
+  padding: 9px;
+  border-width: medium;
+}
+.logo h2 {
+  font-weight: normal;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 22px;
+}
+header {
+  text-align: center;
+  font-family: Baskerville;
+  font-size: 40px;
+  color:#342A1F;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+header h1 {
+  font-weight: normal;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  margin: 100px auto;
+}
+.container .box{
+  position: relative;
+  width: calc(400px - 30px);
+  height: calc(300px - 30px);
+  background: #DCB69F;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.container .box .Box1-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #342A1F;
+  transition: 0.5s;
+  z-index: 1;
+}
+.container .box:hover .Box1-icon {
+  top: 20px;
+  left:calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.container .box .Box1-icon .fa {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: #fff;
+}
+.container .box:hover .Box1-icon .fa {
+  font-size: 40px;
+
+}
+.container .box .content {
+  position:absolute;
+  top: 100%;
+  height:calc(100% - 100%);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+}
+.container .box:hover .content {
+  top: 100px;
+  opacity: 1;
+}
+.container .box .content h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: white;
+  font-size: 24px;
+}
+.container .box .content p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 17px
+}
+.container .box:nth-child(1) .Box1-icon {
+  background: #B49582;
+}
+.container .box:nth-child(1)  {
+  background: #DCB69F;
+}
+.container .box:nth-child(2) .Box1-icon {
+  background: #D4B2B2;
+}
+.container .box:nth-child(2)  {
+  background: #F6CDCD;
+}
+.container .box:nth-child(3) .Box1-icon {
+  background: #A294A3;
+}
+.container .box:nth-child(3)  {
+  background: #CAB8CB;
+}
